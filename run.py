@@ -42,7 +42,8 @@ def computer_guess():
     Computer guess on battleship grid
     """
     ship_row, ship_column = randint(0, 4), randint(0, 4)
-    while player_board[ship_row][ship_column] == "X" or player_board[ship_row][ship_column] == "-":
+    while (player_board[ship_row][ship_column] == "X"
+            or player_board[ship_row][ship_column] == "-"):
         ship_row, ship_column = randint(0, 4), randint(0, 4)
     return ship_row, ship_column
 
