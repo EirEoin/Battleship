@@ -2,13 +2,13 @@
 
 Board Battleship is a python terminal game, which runs the Code Institute mock terminal on Heroku.
 
-The User can try beat the Computer by finding all of the battleships co-ordinates in a limited amount of guesses! One battleship occupies one square on the board.
+The User can try beat the Computer by finding all of the battleships co-ordinates before the computer find your battleship co-ordinates. One battleship occupies one square on the board.
 
 
 ## How to play
 
-Board Battleships is based on the classic Battleships game . In this game the player starts the game and the computers battleship co-ordinates are randomly generated. '-' marks guessed and missed co-ordinates and 'X' marks hit battleships.
-The winner is either The Player after guessing all of the battleship co-ordinates, or the computer when the `player fails to do so.
+Board Battleships is based on the classic Battleships game . In this game the player starts the game and the computers battleship co-ordinates are randomly generated for the computer board and the player board. '-' marks guessed and missed co-ordinates, # marks battleships and 'X' marks hit battleships.
+The winner is whoever sinks the opponents battleships first.
 
 ## Existing Features 
 
@@ -28,12 +28,9 @@ You must enters letters in the row and numbers un the column.
 ## Future Features
 
 - Allow player to select the board size and number of ships
-- Create a user game board for the computer to guess against
 - Allow player to place their own ships on the Battlefield.
--Have ships larger than 1x1
+- Have ships larger than 1x1
 
-## Data Model
-I decided to use a Board class as my model. The game creates an instance for the computers board.
 
 ## Testing
 
@@ -46,6 +43,7 @@ I have manually tested the project by doing the following:
 ## Bugs 
 Solved Bugs 
 - When I wrote the project I had syntax errors until I fixed them by revising past challenges.
+- I passed the code through pep8 and returned to my project to fix the errors such as 'whitespace' and 'line too long'
 
 Remaining Bugs 
 - No bugs remaining
