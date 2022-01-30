@@ -74,3 +74,5 @@ Click on Deploy
 - Codecademy Python2 free lessons.
 
 - Wikipedia for the details of the Battleship game
+
+- I used the article (THE GAME OF BATTLESHIPS IN PYTHON)[https://code.activestate.com/recipes/578836-the-game-of-battleships-in-python/] on code.activestate.com to figure out some of the logic.
