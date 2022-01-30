@@ -1,31 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#Board Battleship
 
-Welcome EirEoin,
+Board Battleship is a python terminal game, which runs the Code Institute mock terminal on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The User can try beat the Computer by finding all of the battleships co-ordinates in a limited amount of guesses! One battleship occupies one square on the board.
 
-## Reminders
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+###How to play
 
-## Creating the Heroku app
+Board Battleships is based on the classic Battleships game . In this game the player starts the game and the computers battleship co-ordinates are randomly generated. '-' marks guessed and missed co-ordinates and 'X' marks hit battleships.
+The winner is either The Player after guessing all of the battleship co-ordinates, or the computer when the `player fails to do so.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+###Existing Features 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+-Random board is generated and the player cannot see where the computer's ships are.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+-Play against the computer.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+-Accepts user input and rejects/reacts to invalid input.
 
-Connect your GitHub repository and deploy as normal.
+-Maintains score
 
-## Constraints
+-Input validation: 
+You cannot enter coordinates outside of the grid.
+You cannot enter the same guess twice.
+You must enters letters in the row and numbers un the column.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+###Future Features
 
------
-Happy coding!
+- Allow player to select the board size and number of ships
+- Create a user game board for the computer to guess against
+- Allow player to place their own ships on the Battlefield.
+-Have ships larger than 1x1
+
+##Data Model
+I decided to use a Board class as my model. The game creates an instance for the computers board.
+
+##Testing
+
+I have manually tested the project by doing the following:
+
+- Passed the code through a PEP8 linter and confirmed there are no problems.
+-Given invalid inputs: strings when numbers are expected and numbers when strings are expected.
+-Tested by local terminal and Code Institute Heroku terminal.
+
+##Bugs 
+Solved Bugs 
+- When I wrote the project I had syntax errors until I fixed them by revising past challenges.
+
+Remaining Bugs 
+- No bugs remaining
+
+Validator Testing
+- PEP8
+No errors were returned from PEP8online.com
+
+###Deployment 
+This project was deployed using Code Institute's ock terminal for Heroku. 
+
+-Steps for deployment:
+Fork or clone this respository
+
+Creates a new Heroku app
+
+Set the buildbacks to Python and NodeJS in the order 
+
+Link the Heroku app to the respository
+
+Click on Deploy
+
+
+##Credits 
+
+-Code Institute for the deployment terminal and Python lessons.
+
+-Codecademy Python2 free lessons.
+
+- Wikipedia for the details of the Battleship game
